@@ -92,7 +92,7 @@ def main():
 	global SAVE
 	terminal_size = get_terminal_size()
 	
-	if terminal_size[0] < 80:
+	if terminal_size[0] < 70:
 		print("""
    
    
@@ -157,7 +157,7 @@ def main():
 		for i in threads:
 			i.join()
 	elif inp == 2:
-		for i in range(0, int(input("[#] Enter the number of threads(1-" + str(len(site_urls)) + "):- "))):
+		for i in range(0, int(input("[#] Enter the number of threads(1-5):- "))):
 			thread = threading.Thread(target=scrap_from_link, args=(i,))
 			thread.start()
 			threads.append(thread)
