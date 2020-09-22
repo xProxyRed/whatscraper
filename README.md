@@ -15,6 +15,6 @@ python3 whatscraper.py
 
 Windows:
 Download: https://github.com/xProxyRed/whatscraper/archive/master.zip
-pip install -r requirements.txt
-start Start.bat
+in cmd: pip install -r requirements.txt
+double click on Start.bat
 ```
